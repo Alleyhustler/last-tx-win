@@ -1,0 +1,67 @@
+@font-face {
+   font-family: "font";
+   src: url('font.ttf') format('truetype');
+}
+
+body {
+   background-image: url('bg.gif');
+}
+
+div {
+  background-image: url('divbg.gif');
+  margin: auto;
+  width: 600px;
+  border: 4px dotted green;
+}
+
+#main{
+  width: 1000px;
+}
+
+.inside {
+  margin: auto;
+  width: 425px;
+}
+
+div.neo {
+   width: 320px;
+   margin: auto;
+}
+
+h1 {
+  font-family: font;
+  color: green;
+  size: 20px;
+  text-align: center;
+}
+
+p {
+  color: green;
+  font-family: font;
+  size: 12px;
+}
+
+h1.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: .15em solid green; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 10s steps(40, end),
+    blink-caret .75s step-end;
+  align: center;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: green; }
+}
+
